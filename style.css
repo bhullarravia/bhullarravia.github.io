@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@300;400;500;600;700&display=swap');
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding-top: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #f8ecf3;   
+    background:#c9d7b2;                      /* BACKGROUND COLOR */
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Klee One', sans-serif;
+    font-size: 6rem;
+    color: rgb(25, 41, 45);   
+    margin: 0;
+    padding-top: 50px;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(25, 41, 45, 0.738);
+    
+}
+
+p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: 595757;
+}
+
+/*-----------------------------Pages---------------------------------------*/
+
+.education-page {
+    margin-top: 60px;
+    padding-bottom: 130px;  
+}
+.experience-page {
+    margin-top: 60px;
+    padding-bottom: 130px;  
+}
+.projects-page {
+    margin-top: 60px;
+    padding-bottom: 130px;  
+}
+/*-----------------------------Navigation---------------------------------------*/
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5% 3%;
+    background:  rgba(25, 41, 45, 0.4);   /* NAVIGATION BAR COLOR */
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    z-index: 1000;
+}
+
+.navigation a {
+    font-family: 'Raleway', sans-serif;
+    color:  rgba(31, 51, 36, 0.738);                                      /* FONT COLOR */
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navigation a:visited {
+    color: rgb(25, 41, 45);
+}
+
+.navigation a:hover {
+    color: #D68CBB;           /* HOVER COLOR */
+    font-weight: 400;
+    transition:color 0.3s;
+    cursor: pointer;
+}
+/*-----------------------------Home---------------------------------------*/
+
+.icon-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.icon-links a svg {
+    color: rgb(25, 41, 45);             /* CONTACT COLOR */
+    transition:color 0.3s;
+    transition: transform 0.3s;
+
+}
+.icon-links a:hover svg {
+    color: #D68CBB;                    /* HOVER COLOR */
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*-----------------------------About---------------------------------------*/
+
+.about-para {
+    font-size: 1.2rem;             
+    width: 100%;                    
+    max-width: 600px;              
+    margin: 20px auto;          
+    line-height: 1.5;              
+    text-align: center;           
+}
+
+
+.resume-buttom {
+    display: inline-block;       
+    padding: 24px 50px;          
+    background-color: rgb(25, 41, 45);                      /* CONTACT COLOR */
+    color: rgb(242, 238, 232);                                               /* FONT COLOR */
+    text-decoration: none;       
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-radius: 10px;     
+    border: 3px solid #9dad71;                        /* PROJECT BORDER COLOR */      
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 5px 5px 5px rgb(212, 140, 186, 0.491);
+
+
+}
+
+.resume-buttom:hover {
+    cursor:pointer;
+    transform: scale(1.05);
+    box-shadow: 8px 8px 5px rgb(212, 140, 186, 0.491);
+}
+
+/*-----------------------------Contact---------------------------------------*/
+
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.icon-box{
+    width: 230px;   
+    height: 230px;
+}
+.contact a svg {
+    width: 230px;   
+    height: 230px;
+    color:  rgb(25, 41, 45);               /* CONTACT COLOR */
+    transition:color 0.3s, transform 0.3s;
+
+}
+.contact a:hover svg {
+    color:  #D68CBB;               /* HOVER COLOR */
+    cursor: pointer;
+    transform: scale(1.05);     
+ 
+}
+
+
+/*-----------------------------Projects---------------------------------------*/
+
+
+.project-row {
+    display:flex;
+    justify-content: center;   
+    gap: 50px;                
+    flex-wrap: wrap;     
+    margin-top: 60px;      
+  }
+.project-box {
+    width: 480px;     
+    height: 480px;        
+    padding: 40px;
+    border-radius: 2px;         
+    background-color:  rgb(31, 51, 56);                         /* PROJECT BOX COLOR */
+    box-shadow: 5px 5px 5px rgb(212, 140, 186, 0.491);
+    transition: transform 0.3s, box-shadow 0.3s; 
+    border: 5px solid #9dad71;                        /* PROJECT BORDER COLOR */
+
+  
+  }
+.project-box-link {
+    display: block;
+    text-decoration: none;  
+}
+.project-box-link:hover .project-box {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 5px rgb(212, 140, 186, 0.491);
+}
+
+.project-image {
+    filter: grayscale(100%);
+    width: 80%;
+    height: 60%;
+    border-radius: 2px;
+    border: 5px solid #D68CBB;                        /* PROJECT BORDER COLOR */
+    
+}
+.project-title {
+    color:rgb(242, 238, 232);                                            /* FONT COLOR */
+    font-size:20px;
+    font-weight: 800;
+    justify-items: left;
+
+} 
+.project-skills {
+    color: rgb(242, 238, 232, 0.753);                       /* FONT COLOR */
+    font-size:14px; 
+    padding-bottom: 10px;
+
+}
+.project-description {
+    color:rgb(242, 238, 232, 0.829);                      /* FONT COLOR */
+    font-size:16px; 
+
+}
+
+/*-----------------------------Information Boxes (Education and Experience)---------------------------------------*/
+
+  .info-box {
+    margin-top: 60px;
+    width: 80%;                
+    padding: 40px;           
+    text-align: left;            
+    border-radius: 2px;         
+    display: inline-block;    
+    background-color: rgb(31, 51, 56);                           /* INFO BOX COLOR */
+    box-shadow: 5px 5px 5px rgb(212, 140, 186, 0.491);
+    border: 5px solid #9dad71;                        /* PROJECT BORDER COLOR */
+
+  }
+  .title {
+    color:rgb(242, 238, 232);                                                       /* FONT COLOR */
+    font-size:24px;
+  }
+  .description{
+    color:rgb(242, 238, 232, 0.753);                                    /* FONT COLOR */
+    font-size:18px
+  }
+  .details{
+    color:rgb(242, 238, 232, 0.829);                                    /* FONT COLOR */
+    font-size:20px;  
+}
+
+/*-----------------------------Images---------------------------------------*/
+.page-content {
+    position: relative;
+    z-index: 1;
+}
+.home-page .side-img {
+    width: 220px;
+}
+.about-page .side-img {
+    width: 220px;
+}
+.education-page .side-img {
+    width: 450px;
+}
+.experience-page .side-img {
+    width: 500px;
+}
+.projects-page .side-img {
+    width: 500px;
+}
+.contact-page .side-img {
+    width: 220px;
+}
+
+.side-img {
+    position: absolute;       
+    height: auto;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+.top-left {
+    top: 50px;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.top-right {
+    top: 50px;
+    right: 0;
+}
+
+.middle-left {
+    top: 50%;  
+    left: 0;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.middle-right {
+    top: 50%;  
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.bottom-left {
+    bottom: 50px;
+    left: 0;
+    transform: scaleX(-1);
+}
+
+.bottom-right {
+    bottom: 50px;
+    right: 0;
+}
+
+/*----------------------------- Resizing---------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        gap: 3vw;
+    }
+    .navigation a {
+        font-size: 0.9rem;
+    }
+}
+
+
+
