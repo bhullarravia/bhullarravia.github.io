@@ -17,17 +17,16 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
-    background: rgb(243,243,243);                       /* BACKGROUND COLOR */
-    
+    background: rgb(35, 31, 46);                       /* DARK MODE */
+
     text-align: center;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Klee One', sans-serif;
+    font-family: 'Neucha', sans-serif;
     font-size: 6rem;
-    color: rgb(0, 0, 0);   
-
+    color: rgb(255, 255, 255);   
     margin: 0;
     padding-top: 50px;
 
@@ -36,10 +35,9 @@ h1 {
 h2 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.738);
-    
+    color: rgba(255, 255, 255, 0.852);   
 }
 
 p {
@@ -70,7 +68,8 @@ p {
     left: 0;
     width: 100%;
     padding: 1.5% 3%;
-    background:  rgba(0, 0, 0, 0.28);   /* NAVIGATION BAR COLOR */
+    background: rgba(4, 4, 8, 0.479);    
+
     backdrop-filter: blur(6px);
     display: flex;
     justify-content: center;
@@ -93,7 +92,8 @@ p {
 }
 
 .navigation a:hover {
-    color:rgb(52, 54, 84);           /* HOVER COLOR */
+    color: #b8a8f2;                       
+
     font-weight: 600;
     transition:color 0.3s;
     cursor: pointer;
@@ -107,13 +107,14 @@ p {
 }
 
 .icon-links a svg {
-    color: rgb(0, 0, 0);             /* CONTACT COLOR */
+    color: rgb(255, 255, 255);             /* CONTACT COLOR */
+
     transition:color 0.3s;
     transition: transform 0.3s;
 
 }
 .icon-links a:hover svg {
-    color: rgb(91, 94, 151);             /* HOVER COLOR */
+    color: #b8a8f2;                       
     cursor: pointer;
     transform: scale(1.05);
 }
@@ -133,16 +134,16 @@ p {
 .resume-buttom {
     display: inline-block;       
     padding: 24px 50px;          
-    background-color: rgb(58, 58, 59);                         /* CONTACT COLOR */
+    background-color:  rgb(61, 53, 83);               /* PROJECT BOX COLOR */
     color:  #f9fafb;                                               /* FONT COLOR */
     text-decoration: none;       
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 16px;
     border-radius: 2px;     
-    border: 3px solid #10121465;                        /* PROJECT BORDER COLOR */      
+    border: 2px solid #b8a8f257; 
     transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 5px 5px 3px  rgb(91, 94, 151);   
+    box-shadow: 8px 8px 4px #18122b;    
 
 
 }
@@ -150,7 +151,8 @@ p {
 .resume-buttom:hover {
     cursor:pointer;
     transform: scale(1.05);
-    box-shadow: 8px 8px 3px  rgb(91, 94, 151);   
+    box-shadow: 12px 12px 4px #18122b;    
+
 }
 
 /*-----------------------------Contact---------------------------------------*/
@@ -172,11 +174,12 @@ p {
     width: 230px;   
     height: 230px;
     color:  rgb(0, 0, 0);               /* CONTACT COLOR */
+    color: rgb(255, 255, 255);  
     transition:color 0.3s, transform 0.3s;
 
 }
 .contact a:hover svg {
-    color:  rgb(91, 94, 151);          /* HOVER COLOR */
+    color: #b8a8f2;                       
     cursor: pointer;
     transform: scale(1.05);     
  
@@ -198,10 +201,10 @@ p {
     height: 480px;        
     padding: 40px;
     border-radius: 2px;         
-    background-color:  rgb(58, 58, 59);                         /* PROJECT BOX COLOR */
-    box-shadow: 8px 8px 3px  rgb(91, 94, 151);   
+    background-color:  rgb(44, 39, 60);                        /* PROJECT BOX COLOR */
+    box-shadow: 8px 8px 3px #18122b;    
     transition: transform 0.3s, box-shadow 0.3s; 
-    border: 5px solid #10121465; ;                        /* PROJECT BORDER COLOR */
+    border: 5px solid #b8a8f257; 
 
   
   }
@@ -211,7 +214,7 @@ p {
 }
 .project-box-link:hover .project-box {
     transform: translateY(-5px);
-    box-shadow: 15px 15px 3px rgb(91, 94, 151);   
+    box-shadow: 15px 15px 4px #18122b;    
 }
 
 .project-image {
@@ -219,11 +222,12 @@ p {
     width: 80%;
     height: 60%;
     border-radius: 2px;
-    border: 5px solid rgb(98, 99, 99);                       /* PROJECT BORDER COLOR */
+    border: 5px solid #b8a8f257; 
     
 }
 .project-title {
     color:  #f9fafb;                                                  /* FONT COLOR */
+
     font-size:20px;
     font-weight: 800;
     justify-items: left;
@@ -231,12 +235,14 @@ p {
 } 
 .project-skills {
     color:  #f9fafbc9;                              /* FONT COLOR */
+
     font-size:14px; 
     padding-bottom: 10px;
 
 }
 .project-description {
     color:  #f9fafbee;                             /* FONT COLOR */
+
     font-size:16px; 
 
 }
@@ -245,16 +251,14 @@ p {
 
   .info-box {
     margin-top: 60px;
-    width: 80%;                
+    width: 60%;                
     padding: 40px;           
     text-align: left;            
     border-radius: 2px;         
     display: inline-block;    
-    background-color:  rgb(58, 58, 59);                     /* INFO BOX COLOR */
-    box-shadow: 8px 8px 3px rgb(91, 94, 151);   
-
-    border: 5px solid #10121465;                        /* PROJECT BORDER COLOR */
-
+    background-color:  rgb(44, 39, 60);                        /* PROJECT BOX COLOR */
+    box-shadow: 8px 8px 4px #18122b;    
+    border: 3px solid #b8a8f257; 
   }
   .title {
      color:  #f9fafb;                                                        /* FONT COLOR */
