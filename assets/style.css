@@ -10,7 +10,6 @@ html {
 
 body {
     position: relative;
-    overflow-x: hidden;
     margin: 0;
     padding-top: 30px; 
     display: flex;
